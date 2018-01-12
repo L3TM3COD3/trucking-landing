@@ -4,10 +4,12 @@
     background: #e8e8e8;
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     &__content {
+        margin-top: 3%;
         width: 50%;
         height: 80%;
         display: flex;

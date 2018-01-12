@@ -1,0 +1,159 @@
+#modal_form {
+	width: 300px; 
+	height: 300px; 
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #e8e8e8;
+	position: fixed; 
+	top: 45%;
+	left: 50%; 
+	margin-top: -150px;
+	margin-left: -150px; 
+	display: none; 
+	opacity: 0; 
+	z-index: 500; 
+	padding: 20px 10px;
+}
+
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+	cursor: pointer;
+    display: block;
+    z-index: 550;
+    transition: .2s;
+
+    &:hover {
+        color: red;
+    }
+}
+
+#overlay {
+	z-index: 450; 
+	position:fixed; 
+	background-color:#000; 
+	opacity:0.8; 
+	-moz-opacity:0.8; 
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+	display:none; 
+}
+
+.modal__form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #e8e8e8;
+
+    &__title {
+        text-align: center;
+        font-size: rem(18px);
+        color:#07213f;
+    }
+    
+    &__name {
+        height: 15%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__name__row__input {
+        text-align: center;
+        border: 1px solid #07213f;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #07213f;
+        transition: .4s;
+        border-radius: 2px;
+
+        @include placeholder {
+            color: #07213f;
+        }
+
+        &:hover {
+            background: #19559b;
+            
+            @include placeholder {
+                color: white;
+            }
+
+        }
+
+        &:focus {
+            background: #19559b;
+
+            @include placeholder  {
+                color: transparent;
+            }
+        }
+    }
+
+    &__tel {
+        height: 15%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tel__row__input {
+        text-align: center;
+        border: 1px solid #07213f;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #07213f;
+        transition: .4s;
+        color: white;
+        border-radius: 2px;
+
+        @include placeholder {
+            color: #07213f;
+        }
+
+        &:hover {
+            background: #19559b;
+            
+            @include placeholder {
+                color: white;
+            }
+
+        }
+
+        &:focus {
+            background: #19559b;
+
+            @include placeholder  {
+                color: transparent;
+            }
+        }
+    }
+}
+
+.modal__form__submit {
+    width: 60%;
+    height: 12%;
+    background-color: #19559b;
+    color: white;
+    border: #07213f;
+    cursor: pointer;
+    transition: .4s;
+    outline: none;
+    border-radius: 2px;
+
+    &:hover {
+        background: #07213f;
+        border: #19559b;
+    }
+}

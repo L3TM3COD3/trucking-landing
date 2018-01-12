@@ -1,0 +1,175 @@
+.adv {
+    width: 100%;
+    height: 100%;
+    background: #e8e8e8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.adv__footer {
+    width: 100%;
+    height: 10%;
+    border: rem(1px) solid red;
+}
+
+.adv__container {
+	width: 100%;
+    display: flex;
+}
+
+.advantages {
+    width: 50%;
+    font-family: ubuntu;
+
+    &__list {
+        width: 70%;
+        height: 60%;
+        margin-left: 20%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: rem(16px);
+
+        @include normal {
+         width: 82%;
+         height: 64%;   
+        }
+
+        &__item {
+            display: flex;
+
+            &__txt {
+                margin-left: 5%;
+
+                &__title {
+                    text-transform: uppercase;
+                    color: #19559b;
+                    font-size: rem(18px);
+                    font-family: ubuntu;
+
+                    @include normal {
+                     font-size: rem(16px);   
+                    }
+                }
+
+                &__desc {
+                    font-family: ubuntu;
+                    color: #333333;
+                    font-size: rem(16px);
+
+                    @include normal {
+                     font-family: rem(14px);   
+                    }
+                }
+            }
+
+            &__icon-pic {
+                width: rem(50px);
+
+                @include normal {
+                    width: rem(40px);   
+                }
+            }
+
+        }
+    }
+
+    .exp {
+        justify-content: flex-start;
+        display: flex;
+        width: 100%;
+        height: 30%;
+
+        @include normal {
+         margin-top: -3%;   
+        }
+
+        &__txt {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-left: 20%;
+            margin-bottom: 2%;
+
+            @include normal {
+             margin-bottom: 0%;   
+            }
+
+            &__title {
+                text-transform: uppercase;
+                font-size: rem(28px);
+                color: #19559b;
+                text-align: left;
+                border-bottom: rem(3px) solid #07213f;
+
+                @include normal {
+                 font-size: rem(22px);   
+                }
+            }
+            
+    
+            &__desc {
+                font-size: rem(18px);
+
+                @include normal {
+                 font-size: rem(16px);   
+                }
+            }
+        }
+        
+        &__number {
+            position: relative;
+            width: 60%;
+
+            &__ten {
+                color: #07213f;
+                font-size: rem(350px);
+                position: absolute;
+                top: -45%;
+
+                @include normal {
+                    font-size: rem(280px);
+                    top: -36%;
+                }
+            }
+        }
+    }
+}
+
+.coop {
+    background-image: url('../../img/bg/adv-bg.png');
+    background-size: cover;
+    width: 50%;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+    opacity: .9;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &__txt {
+        font-family: ubuntu;
+        color: white;
+        font-size: rem(62px);
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        margin-left: 10%;
+
+        &::after {
+            content: url('../../img/icons/tap.png');
+            position: absolute;
+            top: 100%;
+            right: 35%;
+        }
+    }
+}

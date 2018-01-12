@@ -1,0 +1,28 @@
+// adaptive 
+$normal: 1380px;
+$laptop: 992px;
+$tablet: 768px;
+$phone: 480px;
+
+// config
+@import "config/_mixins.scss";
+@import "config/_variables.scss";
+
+// layout
+@import "layout/_fonts";
+@import "layout/_base";
+@import "layout/_adjustment";
+
+// section 
+@import "sections/_header";
+@import "sections/_hero";
+@import "sections/_adv";
+@import "sections/_price";
+@import "sections/_docs";
+@import "sections/_form";
+@import "sections/_footer";
+@import "sections/_modal";
+
+
+// media 
+@import "config/_media";

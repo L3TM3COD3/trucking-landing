@@ -1,0 +1,101 @@
+.docs {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/bg/docs-bg.png');
+    background-position: 0% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: rem(0px) rem(9px) rem(25px) rem(-5px) rgba(0,0,0,0.75);
+    z-index: 50;
+
+.docs__container {
+    width: rem(1200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &__notes {
+        font-family: ubuntu;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        color: #07213f;
+        background: white;
+        width: 50%;
+        height: 95%;
+
+        &__title {
+            color: #07213f;
+            font-size: rem(24px);
+        }
+
+        &__cities {
+            font-size: rem(13px);
+            width: 87%;
+
+            @include normal {
+             font-size: rem(12px);   
+            }
+        }
+
+        &__list {
+            font-family: ubuntu;
+            color: #07213f;
+
+            @include normal {
+                font-size: rem(14px);
+            }
+
+            &__item {
+                display: flex;
+                justify-content: center;
+                color: #07213f;
+                display: flex;
+                justify-content: space-around;
+
+                &__number {
+                    width: 10%;
+                    font-size: rem(82px);
+                    display: flex;
+
+                    @include normal {
+                     font-size: rem(64px);   
+                    }
+                }
+
+                &__txt {
+                    width: 87%;
+                    display: flex;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+.docs-btn {
+    background: #19559b;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    border: rem(1px) solid transparent;
+
+    &:hover {
+        background: #07213f;
+    }
+}
+
+.docs-link {
+    width: 40%;
+    height: 5%;
+}

@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(20px);
+
+    @include normal {
+        margin-top: rem(25px);
+    }
+
+    &__desc {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+        margin-left: rem(50px);
+        -webkit-transform: skew(163deg);
+        -moz-transform: skew(163deg);
+        -o-transform: skew(163deg);
+        background: transparent;
+        border-left: rem(3px) solid white;
+        border-right: rem(3px) solid white;
+        color: white;
+        font-family: Ubuntu;
+        font-size: rem(14px);
+        display: flex;
+        align-items: center;
+
+        @include normal {
+            font-size: rem(15px);
+        }
+    }
+
+    .menu {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__list {
+            width: 100%;
+            display: flex;
+            font-family: Ubuntu;
+            font-size: rem(16px);
+            display: flex;
+            justify-content: space-around;
+
+            @include normal {
+                font-size: rem(18px);
+            }
+
+            &__item {
+
+                &__link {
+                    color: white;
+                    cursor: pointer;
+                    opacity: .8;
+                    transition: .3s;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

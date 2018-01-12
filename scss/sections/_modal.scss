@@ -3,7 +3,7 @@
 	height: 300px; 
 	border-radius: 5px;
 	border: 3px #000 solid;
-	background: #e8e8e8;
+	background: white;
 	position: fixed; 
 	top: 45%;
 	left: 50%; 
@@ -12,7 +12,7 @@
 	display: none; 
 	opacity: 0; 
 	z-index: 500; 
-	padding: 20px 10px;
+    padding: 20px 10px;
 }
 
 #modal_form #modal_close {
@@ -53,7 +53,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: #e8e8e8;
+    background: white;
 
     &__title {
         text-align: center;
@@ -74,8 +74,8 @@
         height: 100%;
         width: 100%;
         outline: none;
-        color: #07213f;
         transition: .4s;
+        color: #19559b;
         border-radius: 2px;
 
         @include placeholder {
@@ -86,13 +86,14 @@
             background: #19559b;
             
             @include placeholder {
-                color: white;
+                color: #19559b;
             }
 
         }
 
         &:focus {
             background: #19559b;
+            color: white;
 
             @include placeholder  {
                 color: transparent;
@@ -113,9 +114,8 @@
         height: 100%;
         width: 100%;
         outline: none;
-        color: #07213f;
         transition: .4s;
-        color: white;
+        color: #19559b;
         border-radius: 2px;
 
         @include placeholder {
@@ -126,13 +126,14 @@
             background: #19559b;
             
             @include placeholder {
-                color: white;
+                color: #19559b;
             }
 
         }
 
         &:focus {
             background: #19559b;
+            color: white;
 
             @include placeholder  {
                 color: transparent;

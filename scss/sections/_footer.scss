@@ -53,11 +53,15 @@
         }
 
         &__cr {
-            font-size: rem(14px);
+            font-size: rem(13px);
             width: 30%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &__company {
+                margin-left: 10%;
+            }
 
             &-link {
                 color: white;
